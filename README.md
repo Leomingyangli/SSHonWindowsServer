@@ -8,12 +8,12 @@
 3.add new port:
   Port 1234
   
-4.change the sshd_config file:
-  PermitRootLogin no
-  PubkeyAuthentication yes
-  PasswordAuthentication no
-  \#GSSAPIAuthentication no
-  \#Match Group administrators
+4.change the sshd_config file:<br />
+  PermitRootLogin no <br />
+  PubkeyAuthentication yes <br />
+  PasswordAuthentication no <br />
+  \#GSSAPIAuthentication no <br />
+  \#Match Group administrators <br />
   \#   AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 
 5.Allow the SSH port in Windows Firewall. By default, the server is using port 22. Run this command in an elevated command prompt:
