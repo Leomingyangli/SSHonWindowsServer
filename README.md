@@ -20,5 +20,5 @@
   netsh advfirewall firewall add rule name="SSHD Port" dir=in action=allow protocol=TCP localport=22
   
 ## 6.Connect by the SSH client
-  ssh -i path\to\id_rsa -p portnumber username@ip
+  ssh -i path\to\id_rsa -p portnumber username@ip <br />
   e.g.: ssh -i .\id_rsa -p 1234 John@123.123.123.123
