@@ -12,9 +12,9 @@
   PermitRootLogin no
   PubkeyAuthentication yes
   PasswordAuthentication no
-  #GSSAPIAuthentication no
-  #Match Group administrators
-  #   AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
+  \#GSSAPIAuthentication no
+  \#Match Group administrators
+  \#   AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 
 5.Allow the SSH port in Windows Firewall. By default, the server is using port 22. Run this command in an elevated command prompt:
   netsh advfirewall firewall add rule name="SSHD Port" dir=in action=allow protocol=TCP localport=22
